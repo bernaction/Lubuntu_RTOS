@@ -52,7 +52,7 @@ sudo apt dist-upgrade -y
 ## 2. Instalação de Dependências
 
 ```bash
-sudo apt install -y build-essential libncurses-dev bison flex libssl-dev libelf-dev dwarves zstd fakeroot kernel-package wget curl
+sudo apt install -y build-essential libncurses-dev bison flex libssl-dev libelf-dev dwarves zstd fakeroot wget curl
 ```
 **O que faz:**
 - `build-essential`: Instala compiladores (gcc, g++) e ferramentas essenciais para compilação
@@ -64,7 +64,6 @@ sudo apt install -y build-essential libncurses-dev bison flex libssl-dev libelf-
 - `dwarves`: Ferramentas para manipulação de informações de debug (inclui pahole, necessário para BTF)
 - `zstd`: Algoritmo de compressão usado pelo kernel moderno
 - `fakeroot`: Permite executar comandos como se fosse root sem privilégios reais (para criar pacotes)
-- `kernel-package`: Utilitários para criar pacotes .deb do kernel compilado
 - `wget`: Ferramenta de linha de comando para download de arquivos
 - `curl`: Ferramenta para transferência de dados via URLs
 
@@ -92,19 +91,24 @@ wget https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/6.14/patch-6.1
 ```
 **O que faz:** Baixa o patch PREEMPT_RT correspondente à versão do kernel. Este patch transforma o kernel em tempo real.
 
-> **Nota:** Verifique as versões mais recentes em [kernel.org](https://kernel.org) e [kernel.org/pub/linux/kernel/projects/rt](https://kernel.org/pub/linux/kernel/projects/rt/)
-
 ---
 
 ## 4. Aplicação do Patch PREEMPT_RT
 
 ```bash
-tar -xvf linux-6.14.tar.xz
+tar -xvf linux-6.14.tar.gz
 ```
 **O que faz:** Extrai o arquivo compactado do kernel.
 - `x`: Extrai arquivos
 - `v`: Modo verbose (mostra arquivos sendo extraídos)
 - `f`: Especifica o arquivo a ser extraído
+
+  
+```bash
+xz -d patch-6.14-rt3.patch.xz
+```
+**O que faz:** Extrai o arquivo de patch.
+- `-d`: Remove o arquivo compactado após a extração.
 
 ```bash
 cd linux-6.14
