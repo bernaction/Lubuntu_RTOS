@@ -1,5 +1,17 @@
 # mod_kernel_6.14
-Roteiro para modificar Lubuntu para RTOS:
+Roteiro para modificar Lubuntu para RTOS.
+
+Referência: Felipe Viel, MSc.
+
+https://private-zinc-3e1.notion.site/RTOS-e-T-picos-Adicionais-9326bf8826564feca96b5516ea816fa3
+
+## Algumas recomendações para compilar
+- O disco tem que ser no mínimo de 20 GB (o PREEMPT_RT é maior que o kernel simples), porém 20 GB tende a sobrar menos de 2 GB para codificar ou fazer outras aplicações;
+- Se fizer em um Máquina Virtual, aconselho a criar um segundo disco ligado a máquina com mais 20 GB (pelo menos) e compilar lá o kernel novo, pois assim, consegue excluir essas informações depois de atualizar o kernel
+
+
+
+
 
 ### Download Lubuntu com kernel 6.14:
 https://cdimage.ubuntu.com/lubuntu/releases/noble/release/lubuntu-24.04.3-desktop-amd64.iso
@@ -9,7 +21,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 Instalar em máquina virtual com minimo 30GB de espaço em disco.
 
-## Terminal:
+### Terminal:
 ```
 mkdir ~/kernel
 cd ~/kernel
@@ -33,7 +45,7 @@ make menuconfig
 - Ativar a opção: “Fully Preemptible Kernel (Real-Time)” 
 - SAVE e EXIT.
 
-# No arquivo .config :
+### No arquivo .config :
 
 - Limpar as keys dentro das aspas
 
@@ -41,7 +53,7 @@ make menuconfig
 
 ```CONFIG_SYSTEM_REVOCATION_KEYS=""```
 
-## Terminal:
+### Terminal:
 ```
 scripts/config --disable SYSTEM_REVOCATION_KEYS
 ```
@@ -57,14 +69,10 @@ sudo update-grub
 sudo shutdown -r now
 ```
 
-## Após reiniciar:  
+### Após reiniciar:  
 ```
 uname -a
 ```
 Você verá uma tela tela com as informações (exemplo)
 
 ```Linux <nome da distro> <versão>-rt<versão> #1 SMP PREEMPT RT <data hora GMT ano> <arquitetura> GNU/Linux```
-
-## Algumas recomendações para compilar
-- O disco tem que ser no mínimo de 20 GB (o PREEMPT_RT é maior que o kernel simples), porém 20 GB tende a sobrar menos de 2 GB para codificar ou fazer outras aplicações;
-- Se fizer em um Máquina Virtual, aconselho a criar um segundo disco ligado a máquina com mais 20 GB (pelo menos) e compilar lá o kernel novo, pois assim, consegue excluir essas informações depois de atualizar o kernel
