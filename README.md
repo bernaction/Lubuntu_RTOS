@@ -254,32 +254,13 @@ dmesg | grep -i "preempt"
 
 ---
 
-## 🔧 Solução de Problemas
-
-### Erro: "No rule to make target 'debian/canonical-certs.pem'"
-```bash
-scripts/config --disable SYSTEM_TRUSTED_KEYS
-scripts/config --disable SYSTEM_REVOCATION_KEYS
-```
-**O que faz:** Desabilita opções que requerem certificados específicos do Ubuntu/Canonical.
-
-### Erro relacionado a BTF
-```bash
-scripts/config --disable DEBUG_INFO_BTF
-```
-**O que faz:** Desabilita a geração de informações BTF que pode causar erros em alguns sistemas.
-
-### Voltar para o kernel original
-Selecione o kernel original no menu do GRUB durante a inicialização (pressione Shift durante o boot para ver o menu).
-
----
-
 ## 📚 Referências
 
+- [Felipe Viel, MSc.](https://private-zinc-3e1.notion.site/RTOS-e-T-picos-Adicionais-9326bf8826564feca96b5516ea816fa3) - Professor de Sistemas em Tempo Real
 - [Kernel.org](https://kernel.org) - Código fonte oficial do kernel Linux
 - [PREEMPT_RT Wiki](https://wiki.linuxfoundation.org/realtime/start) - Documentação oficial do projeto RT
 - [Lubuntu](https://lubuntu.me) - Sistema operacional base
-- [Felipe Viel, MSc.](https://private-zinc-3e1.notion.site/RTOS-e-T-picos-Adicionais-9326bf8826564feca96b5516ea816fa3) - Professor de Sistemas em Tempo Real
+
 
 ---
 
