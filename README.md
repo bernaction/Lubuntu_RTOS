@@ -116,11 +116,9 @@ cd linux-6.14
 **O que faz:** Entra no diretório do código fonte do kernel extraído.
 
 ```bash
-xzcat ../patch-6.14-rt3.patch | patch -p1
+patch -p1 <../patch-6.14-rt3.patch
 ```
 **O que faz:**
-- `xzcat`: Descompacta o arquivo .xz e envia para a saída padrão
-- `|`: Pipe - redireciona a saída para o próximo comando
 - `patch -p1`: Aplica o patch ao código fonte. O `-p1` remove o primeiro nível de diretório dos caminhos no patch
 
 ---
