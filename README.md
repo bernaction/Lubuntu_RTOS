@@ -76,3 +76,6 @@ uname -a
 Você verá uma tela tela com as informações (exemplo)
 
 ```Linux <nome da distro> <versão>-rt<versão> #1 SMP PREEMPT RT <data hora GMT ano> <arquitetura> GNU/Linux```
+
+### Testes:
+git clone git://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git
