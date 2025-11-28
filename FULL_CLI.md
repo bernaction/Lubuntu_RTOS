@@ -56,8 +56,8 @@ sudo shutdown -r now
 - se o kernel realmente está em modo real-time
 - mensagens do dmesg confirmando RT
 ```bash
-sudo uname -r
+uname -r
 uname -v
 cat /sys/kernel/realtime
-dmesg | grep -i "preempt"
+sudo dmesg | grep -i "preempt"
 ```
