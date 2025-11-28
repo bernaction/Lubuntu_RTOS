@@ -31,3 +31,10 @@ sudo make install
 sudo update-grub
 sudo reboot
 ```
+
+```bash
+uname -r
+uname -v
+cat /sys/kernel/realtime
+dmesg | grep -i "preempt"
+```
