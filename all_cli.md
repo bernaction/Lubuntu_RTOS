@@ -39,13 +39,15 @@ make -j$(nproc)
 - instala os módulos no sistema
 - instala o kernel em /boot
 - atualiza o GRUB
-- reinicia
 ```bash
 make modules -j$(nproc)
 sudo make modules_install
 sudo make install
 sudo update-grub
-sudo reboot
+```
+- após confirmar êxito anterior, reinicia
+```bash
+sudo shutdown -r now
 ```
 
 ## Terceira parte
