@@ -11,7 +11,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
 sudo apt install -y build-essential libdwarf-dev libncurses-dev libdw-dev \
-  bison flex libssl-dev libelf-dev dwarves zstd elfutils fakeroot wget curl
+  bison flex libssl-dev libelf-dev dwarves zstd elfutils fakeroot wget curl gawk
 cd ~
 mkdir -p kernel-rt && cd kernel-rt
 wget https://mirrors.edge.kernel.org/pub/linux/kernel/v6.x/linux-6.14.tar.gz
