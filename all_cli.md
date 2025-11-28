@@ -15,6 +15,10 @@ cp /boot/config-$(uname -r) .config
 scripts/config --disable DEBUG_INFO_BTF
 scripts/config --enable DEBUG_INFO_DWARF4
 make olddefconfig
+scripts/config --disable PREEMPT_NONE
+scripts/config --disable PREEMPT_VOLUNTARY
+scripts/config --disable PREEMPT
+scripts/config --enable PREEMPT_RT
 make menuconfig
 ```
 
