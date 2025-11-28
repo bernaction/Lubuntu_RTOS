@@ -50,7 +50,8 @@ sudo apt dist-upgrade -y
 ## 2. Instalação de Dependências
 
 ```bash
-sudo apt install -y build-essential libdwarf-dev libncurses-dev libdw-dev bison flex libssl-dev libelf-dev dwarves zstd elfutils fakeroot wget curl
+sudo apt install -y build-essential libdwarf-dev libncurses-dev libdw-dev \
+  bison flex libssl-dev libelf-dev dwarves zstd elfutils fakeroot wget curl gawk
 ```
 **O que faz:**
 - `build-essential`: Instala compiladores (gcc, g++) e ferramentas essenciais para compilação
@@ -67,6 +68,7 @@ sudo apt install -y build-essential libdwarf-dev libncurses-dev libdw-dev bison 
 - `fakeroot`: Permite executar comandos como se fosse root sem privilégios reais (para criar pacotes)
 - `wget`: Ferramenta de linha de comando para download de arquivos
 - `curl`: Ferramenta para transferência de dados via URLs
+- `gawk`: Implementação GNU da linguagem AWK, uma linguagem clássica de processamento de texto muito usada no Unix.
 
 ---
 
