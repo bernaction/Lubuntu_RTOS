@@ -60,12 +60,53 @@ sudo cyclictest -a -t -p99 -n -m
 ---
 
 
-### Teste de latência de semáforo
+## Teste de latência de semáforo
 ```bash
 sudo ptsematest -a -t -p99
 ```
 
+### Saída observada
+Resumo da execução (com base no print fornecido):
 
+**Threads criadas (IDs e afinidade):**
+- #0:  ID7314, Prioridade 99, CPU0, Intervalo 1000 µs  
+- #1:  ID7315, Prioridade 99, CPU0  
+- #2:  ID7316, Prioridade 98, CPU1, Intervalo 1500 µs  
+- #3:  ID7317, Prioridade 98, CPU1  
+- #4:  ID7318, Prioridade 97, CPU2, Intervalo 2000 µs  
+- #5:  ID7319, Prioridade 97, CPU2  
+- #6:  ID7320, Prioridade 96, CPU3, Intervalo 2500 µs  
+- #7:  ID7321, Prioridade 96, CPU3  
+- #8:  ID7322, Prioridade 95, CPU4, Intervalo 3000 µs  
+- #9:  ID7323, Prioridade 95, CPU4  
+- #10: ID7324, Prioridade 94, CPU5, Intervalo 3500 µs  
+- #11: ID7325, Prioridade 94, CPU5  
+
+### Latências entre pares de threads comunicando via semáforo
+
+| Par | Min (µs) | Cur (µs) | Avg (µs) | Max (µs) |
+|-----|----------|-----------|-----------|-----------|
+| #1 → #0 | 2 | 4 | 7 | 4353 |
+| #3 → #2 | 2 | 5 | 7 | 4180 |
+| #5 → #4 | 2 | 3 | 7 | 3940 |
+| #7 → #6 | 2 | 3 | 8 | 2746 |
+| #9 → #8 | 2 | 3 | 8 | 1762 |
+| #11 → #10 | 2 | 3 | 9 | 2750 |
+
+---
+
+### Interpretação dos Resultados
+
+- **Latência mínima** entre as threads foi **2 µs**, o que demonstra boa responsividade entre operações `sem_wait` e `sem_post`, mesmo dentro de uma VM.
+- **Latência média (Avg)** variou entre **7–9 µs**, valores considerados aceitáveis e estáveis em ambiente virtualizado.
+- **Latências máximas (Max)** variaram de **1762 µs a 4353 µs**, indicando *spikes* ocasionais.
+- Os *spikes* são esperados em sistemas virtualizados devido a:
+  - Interferência do hypervisor,
+  - Interrupções não mascaráveis (NMIs),
+  - Atrasos na entrega de wakeups entre vCPUs.
+- O comportamento geral indica que:
+  - O kernel PREEMPT_RT melhora a previsibilidade,
+  - Mas o VirtualBox ainda introduz jitter significativo em operações de sincronização entre threads.
 
 
 
