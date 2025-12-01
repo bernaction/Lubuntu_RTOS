@@ -21,14 +21,9 @@ sudo cyclictest -p99 -t -n -m
 sudo cyclictest -a -t -p99 -n -m
 ```
 
-### Teste de latência de hardware
-```bash
-sudo hwlatdetect --duration=30 --threshold=10
-```
-
 ### Teste de latência de semáforo
 ```bash
-sudo ptsematest -a -t -p99 -n
+sudo ptsematest -a -t -p99
 ```
 
 
