@@ -33,7 +33,7 @@ sudo cyclictest -p99 -t -n -m
 - Spikes máximos chegam a 7–8 ms devido ao ambiente virtualizado.
 - Valores compatíveis com ambientes VM mesmo com PREEMPT_RT.
 
-
+---
 
 ## Teste padrão 2:
 ```bash
@@ -57,7 +57,7 @@ sudo cyclictest -a -t -p99 -n -m
 - Spikes máximos reduzidos para ~10–12 ms.
 - Afinidade de CPU melhora previsibilidade e reduz jitter.
 
-
+---
 
 
 ### Teste de latência de semáforo
