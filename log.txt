@@ -1,0 +1,501 @@
+=== Servidor Periódico para Tarefas Aperiódicas ===
+
+Configuração:
+  Ts (período):     10 ms
+  Cs (budget):      5 ms
+  Utilização máx:   50.0%
+  Prioridade RT:    70
+  Duração:          20 s
+
+SERVER: Iniciado (Ts=10 ms, Cs=5 ms, prio=70)
+Gerador: Iniciando (pressione Ctrl+C para parar)
+Gerador: Job simples #1 enfileirado
+  [JOB 1] Processando...
+  [JOB 1] Concluído
+Gerador: Job simples #2 enfileirado
+  [JOB 2] Processando...
+  [JOB 2] Concluído
+
+--- 1 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  2
+Jobs executados:    2
+Jobs perdidos:      0
+Períodos executados: 143
+Períodos ociosos:   141 (98.6%)
+Resposta média:     10.659 ms
+Resposta máxima:    18.796 ms
+Budget médio usado: 0.032 ms
+Budget máximo usado: 2.992 ms
+==========================================
+
+Gerador: Job simples #3 enfileirado
+  [JOB 3] Processando...
+  [JOB 3] Concluído
+Gerador: Job simples #4 enfileirado
+  [JOB 4] Processando...
+  [JOB 4] Concluído
+
+--- 2 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  4
+Jobs executados:    4
+Jobs perdidos:      0
+Períodos executados: 245
+Períodos ociosos:   241 (98.4%)
+Resposta média:     8.550 ms
+Resposta máxima:    18.796 ms
+Budget médio usado: 0.041 ms
+Budget máximo usado: 2.992 ms
+==========================================
+
+Gerador: Job pesado #5 enfileirado
+  [JOB PESADO 5] Iniciando...
+  [JOB PESADO 5] Finalizado (sum=60208697050571)
+Gerador: Job simples #6 enfileirado
+  [JOB 6] Processando...
+
+--- 3 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  6
+Jobs executados:    5
+Jobs perdidos:      0
+Períodos executados: 355
+Períodos ociosos:   350 (98.6%)
+Resposta média:     7.841 ms
+Resposta máxima:    18.796 ms
+Budget médio usado: 0.037 ms
+Budget máximo usado: 3.015 ms
+==========================================
+
+  [JOB 6] Concluído
+Gerador: Job simples #7 enfileirado
+  [JOB 7] Processando...
+  [JOB 7] Concluído
+Gerador: Job simples #8 enfileirado
+  [JOB 8] Processando...
+  [JOB 8] Concluído
+Gerador: Job pesado #9 enfileirado
+  [JOB PESADO 9] Iniciando...
+  [JOB PESADO 9] Finalizado (sum=62876584337760)
+
+--- 4 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  9
+Jobs executados:    9
+Jobs perdidos:      0
+Períodos executados: 471
+Períodos ociosos:   462 (98.1%)
+Resposta média:     6.108 ms
+Resposta máxima:    18.796 ms
+Budget médio usado: 0.049 ms
+Budget máximo usado: 3.017 ms
+==========================================
+
+Gerador: Job simples #10 enfileirado
+  [JOB 10] Processando...
+  [JOB 10] Concluído
+Gerador: Job simples #11 enfileirado
+  [JOB 11] Processando...
+  [JOB 11] Concluído
+
+--- 5 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  11
+Jobs executados:    11
+Jobs perdidos:      0
+Períodos executados: 571
+Períodos ociosos:   560 (98.1%)
+Resposta média:     7.211 ms
+Resposta máxima:    18.796 ms
+Budget médio usado: 0.071 ms
+Budget máximo usado: 15.301 ms
+==========================================
+
+Gerador: Job pesado #12 enfileirado
+  [JOB PESADO 12] Iniciando...
+  [JOB PESADO 12] Finalizado (sum=56366235275053)
+Gerador: Job simples #13 enfileirado
+  [JOB 13] Processando...
+  [JOB 13] Concluído
+
+--- 6 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  13
+Jobs executados:    13
+Jobs perdidos:      0
+Períodos executados: 686
+Períodos ociosos:   673 (98.1%)
+Resposta média:     10.361 ms
+Resposta máxima:    38.142 ms
+Budget médio usado: 0.077 ms
+Budget máximo usado: 15.301 ms
+==========================================
+
+Gerador: Job simples #14 enfileirado
+  [JOB 14] Processando...
+  [JOB 14] Concluído
+Gerador: Job pesado #15 enfileirado
+  [JOB PESADO 15] Iniciando...
+  [JOB PESADO 15] Finalizado (sum=64769402734230)
+Gerador: Job simples #16 enfileirado
+  [JOB 16] Processando...
+  [JOB 16] Concluído
+Gerador: Job simples #17 enfileirado
+  [JOB 17] Processando...
+  [JOB 17] Concluído
+
+--- 7 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  17
+Jobs executados:    17
+Jobs perdidos:      0
+Períodos executados: 819
+Períodos ociosos:   802 (97.9%)
+Resposta média:     10.039 ms
+Resposta máxima:    38.142 ms
+Budget médio usado: 0.102 ms
+Budget máximo usado: 15.301 ms
+==========================================
+
+Gerador: Job pesado #18 enfileirado
+  [JOB PESADO 18] Iniciando...
+  [JOB PESADO 18] Finalizado (sum=60209891546001)
+Gerador: Job simples #19 enfileirado
+  [JOB 19] Processando...
+  [JOB 19] Concluído
+Gerador: Job simples #20 enfileirado
+  [JOB 20] Processando...
+  [JOB 20] Concluído
+
+--- 8 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  20
+Jobs executados:    20
+Jobs perdidos:      0
+Períodos executados: 923
+Períodos ociosos:   903 (97.8%)
+Resposta média:     10.487 ms
+Resposta máxima:    38.142 ms
+Budget médio usado: 0.099 ms
+Budget máximo usado: 15.301 ms
+==========================================
+
+Gerador: Job simples #21 enfileirado
+  [JOB 21] Processando...
+  [JOB 21] Concluído
+Gerador: Job simples #22 enfileirado
+  [JOB 22] Processando...
+  [JOB 22] Concluído
+
+--- 9 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  22
+Jobs executados:    22
+Jobs perdidos:      0
+Períodos executados: 1040
+Períodos ociosos:   1018 (97.9%)
+Resposta média:     9.976 ms
+Resposta máxima:    38.142 ms
+Budget médio usado: 0.093 ms
+Budget máximo usado: 15.301 ms
+==========================================
+
+Gerador: Job simples #23 enfileirado
+  [JOB 23] Processando...
+  [JOB 23] Concluído
+Gerador: Job pesado #24 enfileirado
+  [JOB PESADO 24] Iniciando...
+  [JOB PESADO 24] Finalizado (sum=57020025719953)
+Gerador: Job pesado #25 enfileirado
+  [JOB PESADO 25] Iniciando...
+  [JOB PESADO 25] Finalizado (sum=62575318980068)
+
+--- 10 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  25
+Jobs executados:    25
+Jobs perdidos:      0
+Períodos executados: 1180
+Períodos ociosos:   1155 (97.9%)
+Resposta média:     9.844 ms
+Resposta máxima:    38.142 ms
+Budget médio usado: 0.088 ms
+Budget máximo usado: 15.301 ms
+==========================================
+
+Gerador: Job simples #26 enfileirado
+  [JOB 26] Processando...
+  [JOB 26] Concluído
+Gerador: Job simples #27 enfileirado
+  [JOB 27] Processando...
+  [JOB 27] Concluído
+Gerador: Job simples #28 enfileirado
+  [JOB 28] Processando...
+  [JOB 28] Concluído
+
+--- 11 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  28
+Jobs executados:    28
+Jobs perdidos:      0
+Períodos executados: 1289
+Períodos ociosos:   1261 (97.8%)
+Resposta média:     9.660 ms
+Resposta máxima:    38.142 ms
+Budget médio usado: 0.091 ms
+Budget máximo usado: 15.301 ms
+==========================================
+
+Gerador: Job simples #29 enfileirado
+  [JOB 29] Processando...
+  [JOB 29] Concluído
+Gerador: Job simples #30 enfileirado
+  [JOB 30] Processando...
+  [JOB 30] Concluído
+Gerador: Job simples #31 enfileirado
+  [JOB 31] Processando...
+  [JOB 31] Concluído
+
+--- 12 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  31
+Jobs executados:    31
+Jobs perdidos:      0
+Períodos executados: 1402
+Períodos ociosos:   1371 (97.8%)
+Resposta média:     10.317 ms
+Resposta máxima:    41.698 ms
+Budget médio usado: 0.113 ms
+Budget máximo usado: 36.159 ms
+==========================================
+
+Gerador: Job simples #32 enfileirado
+  [JOB 32] Processando...
+  [JOB 32] Concluído
+Gerador: Job simples #33 enfileirado
+  [JOB 33] Processando...
+  [JOB 33] Concluído
+Gerador: Job simples #34 enfileirado
+  [JOB 34] Processando...
+  [JOB 34] Concluído
+Gerador: Job pesado #35 enfileirado
+  [JOB PESADO 35] Iniciando...
+  [JOB PESADO 35] Finalizado (sum=79662652401327)
+Gerador: Job simples #36 enfileirado
+  [JOB 36] Processando...
+  [JOB 36] Concluído
+
+--- 13 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  36
+Jobs executados:    36
+Jobs perdidos:      0
+Períodos executados: 1544
+Períodos ociosos:   1508 (97.7%)
+Resposta média:     10.840 ms
+Resposta máxima:    49.349 ms
+Budget médio usado: 0.122 ms
+Budget máximo usado: 36.159 ms
+==========================================
+
+Gerador: Job pesado #37 enfileirado
+  [JOB PESADO 37] Iniciando...
+  [JOB PESADO 37] Finalizado (sum=62163147984364)
+Gerador: Job simples #38 enfileirado
+  [JOB 38] Processando...
+  [JOB 38] Concluído
+
+--- 14 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  38
+Jobs executados:    38
+Jobs perdidos:      0
+Períodos executados: 1645
+Períodos ociosos:   1607 (97.7%)
+Resposta média:     10.944 ms
+Resposta máxima:    49.349 ms
+Budget médio usado: 0.117 ms
+Budget máximo usado: 36.159 ms
+==========================================
+
+Gerador: Job simples #39 enfileirado
+  [JOB 39] Processando...
+  [JOB 39] Concluído
+Gerador: Job pesado #40 enfileirado
+  [JOB PESADO 40] Iniciando...
+  [JOB PESADO 40] Finalizado (sum=62972364963622)
+Gerador: Job simples #41 enfileirado
+  [JOB 41] Processando...
+  [JOB 41] Concluído
+Gerador: Job simples #42 enfileirado
+  [JOB 42] Processando...
+  [JOB 42] Concluído
+Gerador: Job simples #43 enfileirado
+  [JOB 43] Processando...
+  [JOB 43] Concluído
+
+--- 15 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  43
+Jobs executados:    43
+Jobs perdidos:      0
+Períodos executados: 1810
+Períodos ociosos:   1767 (97.6%)
+Resposta média:     11.482 ms
+Resposta máxima:    49.349 ms
+Budget médio usado: 0.132 ms
+Budget máximo usado: 36.159 ms
+==========================================
+
+Gerador: Job pesado #44 enfileirado
+  [JOB PESADO 44] Iniciando...
+  [JOB PESADO 44] Finalizado (sum=60229815919049)
+Gerador: Job simples #45 enfileirado
+  [JOB 45] Processando...
+  [JOB 45] Concluído
+Gerador: Job simples #46 enfileirado
+  [JOB 46] Processando...
+  [JOB 46] Concluído
+
+--- 16 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  46
+Jobs executados:    46
+Jobs perdidos:      0
+Períodos executados: 1910
+Períodos ociosos:   1864 (97.6%)
+Resposta média:     11.923 ms
+Resposta máxima:    49.349 ms
+Budget médio usado: 0.133 ms
+Budget máximo usado: 36.159 ms
+==========================================
+
+Gerador: Job simples #47 enfileirado
+  [JOB 47] Processando...
+  [JOB 47] Concluído
+Gerador: Job simples #48 enfileirado
+  [JOB 48] Processando...
+  [JOB 48] Concluído
+Gerador: Job simples #49 enfileirado
+  [JOB 49] Processando...
+  [JOB 49] Concluído
+Gerador: Job pesado #50 enfileirado
+  [JOB PESADO 50] Iniciando...
+  [JOB PESADO 50] Finalizado (sum=63948321695400)
+
+--- 17 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  50
+Jobs executados:    50
+Jobs perdidos:      0
+Períodos executados: 2073
+Períodos ociosos:   2023 (97.6%)
+Resposta média:     12.160 ms
+Resposta máxima:    49.349 ms
+Budget médio usado: 0.137 ms
+Budget máximo usado: 36.159 ms
+==========================================
+
+Gerador: Job simples #51 enfileirado
+  [JOB 51] Processando...
+  [JOB 51] Concluído
+Gerador: Job simples #52 enfileirado
+  [JOB 52] Processando...
+  [JOB 52] Concluído
+
+--- 18 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  52
+Jobs executados:    52
+Jobs perdidos:      0
+Períodos executados: 2172
+Períodos ociosos:   2120 (97.6%)
+Resposta média:     12.056 ms
+Resposta máxima:    49.349 ms
+Budget médio usado: 0.134 ms
+Budget máximo usado: 36.159 ms
+==========================================
+
+Gerador: Job pesado #53 enfileirado
+  [JOB PESADO 53] Iniciando...
+  [JOB PESADO 53] Finalizado (sum=63315535193135)
+Gerador: Job pesado #54 enfileirado
+  [JOB PESADO 54] Iniciando...
+  [JOB PESADO 54] Finalizado (sum=62734822902313)
+Gerador: Job pesado #55 enfileirado
+  [JOB PESADO 55] Iniciando...
+  [JOB PESADO 55] Finalizado (sum=65128370567317)
+Gerador: Job pesado #56 enfileirado
+  [JOB PESADO 56] Iniciando...
+  [JOB PESADO 56] Finalizado (sum=62881834906208)
+
+--- 19 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  56
+Jobs executados:    56
+Jobs perdidos:      0
+Períodos executados: 2316
+Períodos ociosos:   2260 (97.6%)
+Resposta média:     12.146 ms
+Resposta máxima:    49.349 ms
+Budget médio usado: 0.131 ms
+Budget máximo usado: 36.159 ms
+==========================================
+
+Gerador: Job pesado #57 enfileirado
+  [JOB PESADO 57] Iniciando...
+  [JOB PESADO 57] Finalizado (sum=60249109160336)
+Gerador: Job simples #58 enfileirado
+  [JOB 58] Processando...
+  [JOB 58] Concluído
+
+--- 20 segundos decorridos ---
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  58
+Jobs executados:    58
+Jobs perdidos:      0
+Períodos executados: 2418
+Períodos ociosos:   2360 (97.6%)
+Resposta média:     12.311 ms
+Resposta máxima:    49.349 ms
+Budget médio usado: 0.128 ms
+Budget máximo usado: 36.159 ms
+==========================================
+
+
+Finalizando...
+SERVER: Finalizado
+Gerador: Job simples #59 enfileirado
+
+=== Estatísticas do Servidor Periódico ===
+Jobs enfileirados:  59
+Jobs executados:    58
+Jobs perdidos:      0
+Períodos executados: 2418
+Períodos ociosos:   2360 (97.6%)
+Resposta média:     12.311 ms
+Resposta máxima:    49.349 ms
+Budget médio usado: 0.128 ms
+Budget máximo usado: 36.159 ms
+==========================================
