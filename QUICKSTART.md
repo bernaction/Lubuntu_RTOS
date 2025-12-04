@@ -242,7 +242,3 @@ R: Mínimo 60 GB de disco, 4 GB RAM. Recomendado: 80 GB, 8 GB RAM.
 - [VirtualBox](https://www.virtualbox.org/)
 - [Lubuntu 24.04](https://cdimage.ubuntu.com/lubuntu/releases/noble/release/)
 - [cyclictest man page](https://man7.org/linux/man-pages/man8/cyclictest.8.html)
-
----
-
-**Boa sorte! 🚀**

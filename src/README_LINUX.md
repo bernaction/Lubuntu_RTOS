@@ -203,4 +203,4 @@ Compare latências: o programa deve ter jitter similar ao cyclictest.
 ## 📝 Licença
 
 Projeto acadêmico - Sistemas em Tempo Real  
-Adaptação ESP32→Linux por [seu nome]
+Adaptação ESP32→Linux
