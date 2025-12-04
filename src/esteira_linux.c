@@ -343,7 +343,7 @@ static void *task_safety(void *arg) {
         
         char ts[32];
         now_str(ts, sizeof(ts));
-        printf("[%s] ⚠️  E-STOP: Esteira parada!\n", ts);
+        printf("[%s] E-STOP: Esteira parada!\n", ts);
     }
     return NULL;
 }
