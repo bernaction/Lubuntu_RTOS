@@ -10,7 +10,7 @@
 sudo apt update
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
-sudo apt install -y build-essential libdwarf-dev libncurses-dev libdw-dev \
+sudo apt install -y build-essential libdwarf-dev libncurses-dev libdw-dev libnuma-dev \
   bison flex libssl-dev libelf-dev dwarves zstd elfutils fakeroot wget curl gawk
 cd ~
 mkdir -p kernel-rt && cd kernel-rt

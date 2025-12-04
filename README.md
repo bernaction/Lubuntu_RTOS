@@ -50,7 +50,7 @@ sudo apt dist-upgrade -y
 ## 2. Instalação de Dependências
 
 ```bash
-sudo apt install -y build-essential libdwarf-dev libncurses-dev libdw-dev \
+sudo apt install -y build-essential libdwarf-dev libncurses-dev libdw-dev libnuma-dev \
   bison flex libssl-dev libelf-dev dwarves zstd elfutils fakeroot wget curl gawk
 ```
 **O que faz:**
@@ -58,6 +58,7 @@ sudo apt install -y build-essential libdwarf-dev libncurses-dev libdw-dev \
 - `libdwarf-dev`: Fornece o header dwarf.h, necessário para scripts do kernel que lidam com informações de debug.
 - `libncurses-dev`: Biblioteca para interface de menus no terminal (usada pelo menuconfig)
 - `libdw-dev`: Bibliotecas para ler e manipular informações DWARF usadas pelo kernel (depende de elfutils).
+- `libnuma-dev`: Bibliotecas para arquiteturas NUMA (Non-Uniform Memory Access), necessárias para compilar kernels otimizados para sistemas multiprocessador
 - `bison`: Gerador de analisadores sintáticos, necessário para compilar o kernel
 - `flex`: Gerador de analisadores léxicos, trabalha junto com o bison
 - `libssl-dev`: Bibliotecas de desenvolvimento SSL para assinatura de módulos

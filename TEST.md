@@ -2,7 +2,6 @@
 # Parte 1 – Análise de Linux Kernel RT
 
 ```bash
-sudo apt install libnuma-dev
 git clone git://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git
 cd rt-tests
 git checkout stable/v1.0
